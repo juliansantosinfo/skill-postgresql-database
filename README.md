@@ -16,6 +16,10 @@ python .agents/skills/postgresql-database/scripts/pg_tool.py --env-file ./config
 
 O parâmetro `--env-file` deve vir **antes** de `ping`, `query` ou `execute`. Nunca versionar `.env`/`banco.env` contendo credenciais. Use `.gitignore` no projeto e certifique-se de que os arquivos de configuração sensíveis não foram adicionados anteriormente ao Git.
 
+### Descoberta de instâncias Docker
+
+Para identificar automaticamente containers PostgreSQL em execução no host e gerar os arquivos `.env` individuais no diretório `./postgresql-connections/`, consulte e utilize o prompt em [`prompts/gerar-env-docker.md`](prompts/gerar-env-docker.md).
+
 ---
 
 # postgresql-database — skill multiplataforma
